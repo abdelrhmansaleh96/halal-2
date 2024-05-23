@@ -1,0 +1,36 @@
+.footer-links-wrapper {
+  .-footer-Nav-link {
+    color: #1e2124;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .active {
+    color: #aba7a8;
+  }
+  @media screen and (min-width: 1201px) and (max-width: 1440px) {
+    .-footer-Nav-link {
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 994px) and (max-width: 1200px) {
+    .-footer-Nav-link {
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 993px) {
+    .-footer-Nav-link {
+      font-size: 12px;
+    }
+  }
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    .-footer-Nav-link {
+      font-size: 10px;
+    }
+  }
+  @media screen and (min-width: 0) and (max-width: 576px) {
+    .-footer-Nav-link {
+      font-size: 8px;
+    }
+  }
+}

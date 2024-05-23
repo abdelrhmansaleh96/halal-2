@@ -1,0 +1,10 @@
+.init {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  &__msg {
+    font-weight: 400;
+  }
+}

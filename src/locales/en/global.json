@@ -1,0 +1,21 @@
+{
+  "WELCOME_TO_OUR_NEW_PROJECT": "WELCOME TO OUR NEW PROJECT",
+  "REACT_QUERY": "REACT QUERY",
+  "TITLE": "FE-INIT",
+  "chooseLang": "Choose Language",
+  "learn": "Learn more",
+  "contact": "Contact Us",
+  "links": {
+    "home": "Home",
+    "services": "Services",
+    "certifiedProducts": "Certified Products",
+    "aboutUs": "About Us"
+  },
+  "homeBenefits": {
+    "title": "Benefits of Issuing Halal Certificates"
+  },
+  "contactUs": {
+    "help": "Need Help?",
+    "helpDescription": "If you have any question or inquiry please don't hesitate to send the inquiry message, and we reply to you as soon as."
+  }
+}

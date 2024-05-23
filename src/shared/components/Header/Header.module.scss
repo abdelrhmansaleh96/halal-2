@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #d7d7d7;
+  &__brand {
+    display: flex;
+    align-items: center;
+    &___image {
+      width: 60px;
+    }
+    &___title {
+      margin-left: 10px;
+      font-weight: 700;
+    }
+  }
+  &__settings {
+    display: flex;
+    gap: 1rem;
+  }
+}
