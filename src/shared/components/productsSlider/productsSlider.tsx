@@ -14,6 +14,8 @@ export const ProductsSlider: React.FC<Props> = ({ children }) => {
     slidesToShow: 4.5,
     slidesToScroll: 4.5,
     initialSlide: 0,
+    swipeToSlide: true,
+
     responsive: [
       {
         breakpoint: 1024,
