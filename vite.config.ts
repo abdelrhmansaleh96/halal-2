@@ -1,6 +1,7 @@
 import { defineConfig, loadEnv } from "vite";
-import react from "@vitejs/plugin-react-swc";
+
 import alises from "./aliases";
+import react from "@vitejs/plugin-react-swc";
 import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, "", "");
@@ -13,7 +14,7 @@ export default defineConfig(({ command, mode }) => {
     },
 
     build: {
-      outDir: "./wwwroot/prod-app/",
+      outDir: "./dist",
       rollupOptions: {
         output: {
           entryFileNames: `js/[name]-${env.VITE_APP_MODE}.js`,
