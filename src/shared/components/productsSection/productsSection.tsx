@@ -40,7 +40,9 @@ const ProductsSection = ({
         <SectionSubTitle
           text="Certified Products from
 IS EG Halal"
-          className={` max-w-[48rem] ${sectionSubTitleClassName && sectionSubTitleClassName}`}
+          className={` max-w-[48rem] ${
+            sectionSubTitleClassName && sectionSubTitleClassName
+          }`}
         />
       </MainContainer>
       <ProductsSlider>
@@ -50,7 +52,9 @@ IS EG Halal"
             img={product.img}
             title={product.title}
             productCardClassName={productCardClassName && productCardClassName}
-            ProductTitleClassName={ProductTitleClassName && ProductTitleClassName}
+            ProductTitleClassName={
+              ProductTitleClassName && ProductTitleClassName
+            }
           />
         ))}
       </ProductsSlider>

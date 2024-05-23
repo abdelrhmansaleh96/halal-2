@@ -1,0 +1,91 @@
+.contact-input-group {
+  .-contact-label {
+    font-size: 16px;
+  }
+  .-contact-input {
+    font-size: 16px;
+    border: 1px solid #9d9f9f4d;
+    padding: 13.5px 12px;
+  }
+  .-helper-text {
+    font-size: 12px;
+  }
+  .--contact-submit-btn {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1201px) and (max-width: 1440px) {
+    .-contact-label {
+      font-size: 15px;
+    }
+    .-contact-input {
+      font-size: 15px;
+      padding: 12.5px 11px;
+    }
+    .-helper-text {
+      font-size: 11px;
+    }
+    .--contact-submit-btn {
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 994px) and (max-width: 1200px) {
+    .-contact-label {
+      font-size: 14px;
+    }
+    .-contact-input {
+      font-size: 14px;
+      padding: 10.5px 10px;
+    }
+    .-helper-text {
+      font-size: 10px;
+    }
+    .--contact-submit-btn {
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 993px) {
+    .-contact-label {
+      font-size: 12px;
+    }
+    .-contact-input {
+      font-size: 12px;
+      padding: 8.5px 8px;
+    }
+    .-helper-text {
+      font-size: 9px;
+    }
+    .--contact-submit-btn {
+      font-size: 12px;
+    }
+  }
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    .-contact-label {
+      font-size: 11px;
+    }
+    .-contact-input {
+      font-size: 11px;
+      padding: 8.5px 8px;
+    }
+    .-helper-text {
+      font-size: 8px;
+    }
+    .--contact-submit-btn {
+      font-size: 12px;
+    }
+  }
+  @media screen and (min-width: 0) and (max-width: 576px) {
+    .-contact-label {
+      font-size: 10px;
+    }
+    .-contact-input {
+      font-size: 10px;
+      padding: 8.5px 8px;
+    }
+    .-helper-text {
+      font-size: 7.5px;
+    }
+    .--contact-submit-btn {
+      font-size: 11px;
+    }
+  }
+}

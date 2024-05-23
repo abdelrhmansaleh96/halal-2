@@ -1,0 +1,19 @@
+.halal-standards-title {
+  font-size: 32px;
+  line-height: 120%;
+  @media screen and (min-width: 1201px) and (max-width: 1440px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 994px) and (max-width: 1200px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 993px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 0) and (max-width: 576px) {
+    font-size: 14px;
+  }
+}

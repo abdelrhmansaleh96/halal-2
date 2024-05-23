@@ -1,4 +1,4 @@
-import { ContactUsForm } from "./ContactUsForm";
+import { ContactUsForm } from "./ContactUsForm/ContactUsForm";
 import { ContactUsFormInfo } from "./ContactUsFormInfo";
 import { MainContainer } from "@appSharedComponents/main-container/MainContainer";
 
