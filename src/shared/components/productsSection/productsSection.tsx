@@ -31,11 +31,11 @@ const ProductsSection = ({
     { name: t("links.certifiedProducts"), path: "/certified-products" },
   ];
   const products: TProductCard[] = [
-    { img: product0, title: "Pharmaceuticals" },
-    { img: product1, title: "Agro food​ ​" },
-    { img: product2, title: "Food Additives" },
-    { img: product3, title: "Personal care" },
-    { img: product4, title: "Meat packing" },
+    { img: product0, title: "homeBenefits.pharmaceuticals" },
+    { img: product1, title: "homeBenefits.agroFood​" },
+    { img: product2, title: "homeBenefits.foodAdditives" },
+    { img: product3, title: "homeBenefits.personalCare" },
+    { img: product4, title: "homeBenefits.meatPacking" },
   ];
 
   return (
@@ -58,7 +58,7 @@ const ProductsSection = ({
           <ProductCard
             key={index}
             img={product.img}
-            title={product.title}
+            title={t(product.title)}
             productCardClassName={productCardClassName && productCardClassName}
             ProductTitleClassName={
               ProductTitleClassName && ProductTitleClassName
