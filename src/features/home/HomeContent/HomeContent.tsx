@@ -18,7 +18,11 @@ export const HomeContent: React.FC = () => {
           productCardClassName="home-product-card"
           ProductTitleClassName="home-product-title"
         />
-        <ContactUsSection />
+        <ContactUsSection
+          title="Need to be Halal Certified "
+          description="Subscribe to get the benefits of IS EG Halal certification around the world"
+          btnText="Contact us"
+        />
       </div>
     </FadingAnimation>
   );
