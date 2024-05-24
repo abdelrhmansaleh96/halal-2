@@ -32,10 +32,7 @@ export class ApiClient {
     return Promise.reject({ data: null, error: errorMessage });
   }
 
-  async get<T>(
-    endpoint: string,
-    config?: AxiosRequestConfig
-  ): Promise<ApiResponse<T>> {
+  async get<T>(endpoint: string, config?: AxiosRequestConfig): Promise<ApiResponse<T>> {
     try {
       const response = await this.api.get<T>(endpoint, config);
       return { data: response.data, error: null };
@@ -47,11 +44,7 @@ export class ApiClient {
     }
   }
 
-  async post<T>(
-    endpoint: string,
-    data?: any,
-    config?: AxiosRequestConfig
-  ): Promise<ApiResponse<T>> {
+  async post<T>(endpoint: string, data?: any, config?: AxiosRequestConfig): Promise<ApiResponse<T>> {
     try {
       const response = await this.api.post<T>(endpoint, data, config);
       return { data: response.data, error: null };
@@ -63,11 +56,7 @@ export class ApiClient {
     }
   }
 
-  async put<T>(
-    endpoint: string,
-    data?: any,
-    config?: AxiosRequestConfig
-  ): Promise<ApiResponse<T>> {
+  async put<T>(endpoint: string, data?: any, config?: AxiosRequestConfig): Promise<ApiResponse<T>> {
     try {
       const response = await this.api.put<T>(endpoint, data, config);
       return { data: response.data, error: null };
@@ -79,10 +68,7 @@ export class ApiClient {
     }
   }
 
-  async delete<T>(
-    endpoint: string,
-    config?: AxiosRequestConfig
-  ): Promise<ApiResponse<T>> {
+  async delete<T>(endpoint: string, config?: AxiosRequestConfig): Promise<ApiResponse<T>> {
     try {
       const response = await this.api.delete<T>(endpoint, config);
       return { data: response.data, error: null };

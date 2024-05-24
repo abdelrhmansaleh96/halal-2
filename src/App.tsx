@@ -2,12 +2,16 @@ import "./i18n"; // import i18n configuration
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { AnimatePresence } from "framer-motion";
 import AppRoutes from "./AppRoutes";
 import { LanguageProvider } from "@appSharedComponents/language/language-context";
 import { ThemeProvider } from "@shadcnComponents/theme-provider";
+import { useScrollToTop } from "./shared/hooks";
 
 function App() {
   // const { t } = useTranslation();
+
+  useScrollToTop();
 
   return (
     <div>
@@ -22,7 +26,9 @@ function App() {
             </div>
             <section className={styles.apiArea}></section>
           </Container> */}
-          <AppRoutes />
+          <AnimatePresence>
+            <AppRoutes />
+          </AnimatePresence>
         </LanguageProvider>
       </ThemeProvider>
     </div>

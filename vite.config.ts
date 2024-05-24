@@ -13,7 +13,7 @@ export default defineConfig(({ command, mode }) => {
     },
 
     build: {
-      outDir: "./wwwroot/prod-app/",
+      outDir: "./dist",
       rollupOptions: {
         output: {
           entryFileNames: `js/[name]-${env.VITE_APP_MODE}.js`,

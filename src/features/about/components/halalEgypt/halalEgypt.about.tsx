@@ -1,13 +1,23 @@
-import MainContainer from "@/shared/components/mainContainer/mainContainer";
 import "./halalEgypt.about.scss";
+
 import AboutContainer from "@/shared/components/aboutContainer/aboutContainer";
-import banner from "@appImg/about/banner.svg";
+import { CustomBreadcrumbs } from "@/shared/components/customBreadcrumbs/customBreadcrumbs";
 import { DescriptionTextAbout } from "../../shared";
+import MainContainer from "@/shared/components/mainContainer/mainContainer";
+import banner from "@appImg/about/banner.svg";
+import { useTranslation } from "react-i18next";
 
 export const HalalEgyptAbout = () => {
+  const { t } = useTranslation();
+  const breadcrumbs = [
+    { name: t("links.home"), path: "/" },
+    { name: t("links.aboutUs"), path: "/about-us" },
+  ];
   return (
     <div className="bg-[#F5F7F8] w-full py-[28px] flex flex-col xxl:gap-[65px] xl:gap-[60px] lg:gap-[48px] md:gap-[36px] gap-[24px] halal-egypt">
       <MainContainer>
+        <CustomBreadcrumbs breadcrumbs={breadcrumbs} />
+
         <div className="max-w-[1636px] -halal-egypt-img-cover">
           <img src={banner} alt="--about-img" />
         </div>

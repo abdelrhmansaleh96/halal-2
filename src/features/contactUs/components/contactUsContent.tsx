@@ -1,9 +1,12 @@
 import { ContactFormContainer } from "./ContactFormContainer";
+import { FadingAnimation } from "@/shared/components";
 
 export const ContactUsContent: React.FC = () => {
   return (
-    <div className="flex flex-col">
-      <ContactFormContainer />
-    </div>
+    <FadingAnimation>
+      <div className="flex flex-col">
+        <ContactFormContainer />
+      </div>
+    </FadingAnimation>
   );
 };
