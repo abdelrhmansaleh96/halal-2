@@ -32,7 +32,7 @@ export const ProfessionalPerformanceAccreditation = () => {
               text="To support the goals of the sustainable development and to ensure the professional performance of ISEG HALAL, as the certification body, which grants Halal certificates, the company has been accredited by the Egyptian accreditation council (EGAC) in accordance with:
               "
             />
-            <ul className="ps-4 list-disc list-ma ---professional-performance-list-wrapper">
+            <ul className="ps-4 list-disc  ---professional-performance-list-wrapper">
               <li className="">
                 <DescriptionTextAbout text="The requirements of international Accreditation forum (IAF)" />
               </li>
