@@ -1,4 +1,4 @@
-import { About, ContactUs, Home, Products } from "@/pages";
+import { About, ContactUs, Home, Products, Accreditation } from "@/pages";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import { Layout } from "./shared/components";
@@ -14,6 +14,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/certified-products" element={<Products />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/accreditation" element={<Accreditation />} />
       </Route>
     </Routes>
   );

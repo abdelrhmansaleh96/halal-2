@@ -1,0 +1,44 @@
+.halal-egypt {
+  .-halal-egypt-content-wrapper {
+    .--halal-egypt-title {
+      font-size: 96px;
+      line-height: 90%;
+    }
+  }
+  @media screen and (min-width: 1201px) and (max-width: 1440px) {
+    .-halal-egypt-content-wrapper {
+      .--halal-egypt-title {
+        font-size: 84px;
+      }
+    }
+  }
+  @media screen and (min-width: 994px) and (max-width: 1200px) {
+    .-halal-egypt-content-wrapper {
+      .--halal-egypt-title {
+        font-size: 72px;
+      }
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 993px) {
+    .-halal-egypt-content-wrapper {
+      .--halal-egypt-title {
+        font-size: 52px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    .-halal-egypt-content-wrapper {
+      .--halal-egypt-title {
+        font-size: 36px;
+      }
+    }
+  }
+  @media screen and (min-width: 0) and (max-width: 576px) {
+    .-halal-egypt-content-wrapper {
+      .--halal-egypt-title {
+        font-size: 28px;
+      }
+    }
+  }
+}
