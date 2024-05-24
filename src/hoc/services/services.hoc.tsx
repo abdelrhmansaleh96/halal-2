@@ -1,6 +1,8 @@
 import {
   CertificationProcessServices,
+  CertificationProvider,
   HalalBenefitsServices,
+  HalalUsersServices,
 } from "@/features/services/components";
 
 export const ServicesHOC = () => {
@@ -8,6 +10,8 @@ export const ServicesHOC = () => {
     <section id="services">
       <HalalBenefitsServices />
       <CertificationProcessServices />
+      <HalalUsersServices />
+      <CertificationProvider />
     </section>
   );
 };
