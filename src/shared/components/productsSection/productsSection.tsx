@@ -10,6 +10,7 @@ import product1 from "@appImg/products/product1.png";
 import product2 from "@appImg/products/product2.png";
 import product3 from "@appImg/products/product3.png";
 import product4 from "@appImg/products/product4.png";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   productsWrapperClassName?: string;
@@ -30,6 +31,7 @@ const ProductsSection = ({
     { img: product3, title: "Personal care" },
     { img: product4, title: "Meat packing" },
   ];
+  const { t } = useTranslation();
 
   return (
     <div
