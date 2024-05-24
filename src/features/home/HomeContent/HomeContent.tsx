@@ -1,7 +1,7 @@
 import "./HomeContent.scss";
 
 import { ContactUsSection } from "../contactUsSection/ContactUsSsection";
-import { FadingAnimation } from "@/shared/components";
+import { FadingAnimation } from "@appSharedComponents/fadingAnimation/FadingAnimation";
 import { HomeBenefits } from "../homeBenefits/HomeBenefits";
 import { HomeHero } from "../HomeHero/HomeHero";
 import ProductsSection from "../../../shared/components/productsSection/productsSection";

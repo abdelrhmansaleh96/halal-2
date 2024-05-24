@@ -6,9 +6,15 @@ type Props = {
 };
 
 const NavLinkItem: React.FC<Props> = ({ to, text }) => {
-  const classNames = "text-md xl:text-lg hover:text-white transition-colors duration-300 uppercase";
+  const classNames =
+    "text-md xl:text-lg hover:text-white transition-colors duration-300 uppercase";
   return (
-    <NavLink to={to} className={({ isActive }) => (isActive ? "text-white " : "text-popover ") + classNames}>
+    <NavLink
+      to={to}
+      className={({ isActive }) =>
+        (isActive ? "text-white " : "text-popover ") + classNames
+      }
+    >
       {text}
     </NavLink>
   );
