@@ -1,4 +1,4 @@
-import { HalalEgyptAbout, HalalTeamAbout, WhatHalalAbout } from "@/features/about/components";
+import { HalalEgyptAbout, WhatHalalAbout } from "@/features/about/components";
 
 import { FadingAnimation } from "@/shared/components";
 
@@ -8,7 +8,6 @@ export const AboutHOC = () => {
       <section id="about-us">
         <HalalEgyptAbout />
         <WhatHalalAbout />
-        <HalalTeamAbout />
       </section>
     </FadingAnimation>
   );

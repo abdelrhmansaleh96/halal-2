@@ -1,1 +1,1 @@
-export * from "./certificationProcess";
+export * from "./certificationProcess.services";
