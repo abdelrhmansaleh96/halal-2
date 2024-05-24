@@ -17,6 +17,10 @@ const NavLinks: React.FC = () => {
       text: t("links.certifiedProducts"),
     },
     {
+      to: "/accreditation",
+      text: t("links.accreditation"),
+    },
+    {
       to: "/about-us",
       text: t("links.aboutUs"),
     },
