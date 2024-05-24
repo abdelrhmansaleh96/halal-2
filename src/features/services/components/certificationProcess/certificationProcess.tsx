@@ -38,9 +38,11 @@ export const CertificationProcessServices = () => {
               </div>
             </div>
           </div>
-          <hr className="self-end" />
         </MainContainer>
       </div>
+      <MainContainer>
+        <hr className="self-end" />
+      </MainContainer>
     </>
   );
 };
