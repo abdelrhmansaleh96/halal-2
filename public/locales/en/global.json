@@ -56,5 +56,13 @@
     "certificationImportShipment": "Halal Certification for Import Shipment",
     "certificationImportShipmentParagraph": "ISEG issues Halal certificates for exported shipments, our expert team ensures rigorous validation and inspection. We verify that the goods adhere to Islamic guidelines and meet international health standards. Simply submit the necessary shipment documents, and our team will handle the entire process within Egypt—from production to issuing the required Halal certificate and facilitating export. Trust ISEG for accurate and efficient Halal certification.",
     "submitYourInQuiry": "Submit your Inquiry"
+  },
+  "certifiedProducts": {
+    "HalalStandards": "Halal Standards, Regulations Guidelines and Practices",
+    "HalalStandardsAndRegulations": "Halal Standards and regulations:",
+    "ISEGHALALInternationalSpecifications": "ISEG HALAL applies Halal standards according to the relevant international specifications:",
+    "whoAreOurClients": "Who are our clients?",
+    "whoAreOurClientsParagraphOne": "Any entity worldwide interested in exporting foods and other products to Egypt and the Muslim world.",
+    "whoAreOurClientsParagraphTwo": "We strive to prosper with companies of all calibers, guiding them through the Halal Certification process."
   }
 }
