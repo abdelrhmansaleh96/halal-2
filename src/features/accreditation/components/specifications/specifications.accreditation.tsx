@@ -28,14 +28,14 @@ export const SpecificationsAccreditation = () => {
               <div>
                 <SectionSubTitle
                   className="max-w-[400px]"
-                  text="ISEG HALA Specifications "
+                  text="accreditationAndSpecifications.ISEGHALASpecifications"
                 />
-                <DescriptionTextAbout text="ISEG HALAL is to issuing HALAL certificates to various entities and its products according to the following specifications:" />
+                <DescriptionTextAbout text="accreditationAndSpecifications.issuingCertificates" />
               </div>
               <div className="flex flex-col xxl:gap-[40px] xl:gap-[36px] lg:gap-[28px] md:gap-[20px] gap-[16px]">
                 <CardDescription
                   className="!font-bold !text-[#1E2124]"
-                  text="Requirements for Slaughtering Animals According to Islamic Law"
+                  text="accreditationAndSpecifications.generalRequirementsIslamicSharia"
                 />
                 <div className="flex gap-2 flex-wrap">
                   <DescriptionTextAbout
@@ -55,7 +55,7 @@ export const SpecificationsAccreditation = () => {
               <div className="flex flex-col xxl:gap-[40px] xl:gap-[36px] lg:gap-[28px] md:gap-[20px] gap-[16px]">
                 <CardDescription
                   className="!font-bold !text-[#1E2124]"
-                  text="General Requirements for Halal Foods &Halal Product According to Islamic Sharia"
+                  text="accreditationAndSpecifications.generalRequirementsIslamicSharia"
                 />
                 <div className="grid grid-cols-3 gap-2 ">
                   {generalRequirements.map((generalRequirement, index) => (
@@ -72,10 +72,10 @@ export const SpecificationsAccreditation = () => {
             <div className="flex flex-col xxl:gap-[20px] xl:gap-[18px] lg:gap-[16px] md:gap-[14px] gap-[12px] h-fit bg-[#C09300] xxl:px-[60px] xl:px-[48px] lg:px-[36px] md:px-[24px] px-[12px] xxl:py-[55px] xl:py-[48px] lg:py-[36px] md:py-[24px] py-[16px] --specifications-content">
               <SectionSubTitle
                 className="max-w-[400px] text-white"
-                text="Accreditation Scope"
+                text="accreditationAndSpecifications.accreditationScope"
               />
               <DescriptionTextAbout
-                text="ISEG HALAL has been accredited according to the following international Standards:"
+                text="accreditationAndSpecifications.followingInternationalStandards"
                 className=" text-white"
               />
 
