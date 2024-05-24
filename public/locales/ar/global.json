@@ -58,7 +58,8 @@
     "submitYourInQuiry": "أرسل استفسارك"
   },
   "certifiedProducts": {
-    "HalalStandards": "معايير الحلال، اللوائح التوجيهية والممارسات",
+    "HalalStandards": "مواصفات ISEG",
+    "HalalStandards-sub": "تقوم ISEG HALAL بإصدار شهادات الحلال لمختلف الكيانات ومنتجاتها وفقًا للمواصفات التالية:",
     "HalalStandardsAndRegulations": "معايير ولوائح الحلال:",
     "ISEGHALALInternationalSpecifications": "تطبق ISEG HALAL معايير الحلال وفقًا للمواصفات الدولية ذات الصلة:",
     "whoAreOurClients": "من هم عملاؤنا؟",

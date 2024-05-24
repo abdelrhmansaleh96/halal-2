@@ -58,7 +58,8 @@
     "submitYourInQuiry": "Submit your Inquiry"
   },
   "certifiedProducts": {
-    "HalalStandards": "Halal Standards, Regulations Guidelines and Practices",
+    "HalalStandards": "ISEG HALA Specifications ",
+    "HalalStandards-sub": "ISEG HALAL is to issuing HALAL certificates to various entities and its products according to the following specifications:",
     "HalalStandardsAndRegulations": "Halal Standards and regulations:",
     "ISEGHALALInternationalSpecifications": "ISEG HALAL applies Halal standards according to the relevant international specifications:",
     "whoAreOurClients": "Who are our clients?",

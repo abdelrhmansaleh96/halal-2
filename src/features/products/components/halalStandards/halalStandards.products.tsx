@@ -5,6 +5,7 @@ import { HalalStandardsTitle } from "../../shared";
 import MainContainer from "@/shared/components/mainContainer/mainContainer";
 import SectionSubTitle from "@/shared/components/sectionSubTitle/sectionSubTitle";
 import { useTranslation } from "react-i18next";
+import CardDescription from "@/shared/components/cardDescription/cardDescription";
 
 export const HalalStandardsProducts = () => {
   const { t } = useTranslation();
@@ -12,10 +13,16 @@ export const HalalStandardsProducts = () => {
     <div className="bg-[#C09300] xxl:py-[76px] xl:py-[64px] lg:py-[48px] md:py-[36px] py-[24px]  halal-standards">
       <MainContainer>
         <div className="flex flex-col xxl:gap-[86px] xl:gap-[72px] lg:gap-[58px] md:gap-[36px] gap-[24px]">
-          <SectionSubTitle
-            text="certifiedProducts.HalalStandards"
-            className="text-white "
-          />
+          <div>
+            <SectionSubTitle
+              text="certifiedProducts.HalalStandards"
+              className="text-white "
+            />
+            <CardDescription
+              className="text-white "
+              text={"certifiedProducts.HalalStandards-sub"}
+            />
+          </div>
 
           <div className="grid lg:grid-cols-12 grid-cols-1 xxl:gap-[52px] xl:gap-[36px] lg:gap-[24px] md:gap-[18px] gap-[12px]">
             <div className="col-span-5 flex flex-col xxl:gap-[40px] xl:gap-[32px] lg:gap-[20px] md:gap-[16px] gap-[10px]  ">
