@@ -82,3 +82,12 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .contact-map {
+    padding: 1rem 0 3rem 0;
+    .title {
+      bottom: 1rem;
+    }
+  }
+}

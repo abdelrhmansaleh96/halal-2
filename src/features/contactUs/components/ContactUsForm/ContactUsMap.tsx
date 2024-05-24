@@ -57,7 +57,7 @@ export const ContactUsMap: React.FC = () => {
         <SectionSubTitle text="Explore our Locations" className="text-white" />
       </div>
       <div className="map">
-        <img src={map} alt="map" />
+        <img src={map} alt="map" className="object-contain sm:object-initial" />
         <div className="map-overlay">
           <div className="map-overlay--content">
             {flags.map((flag, index) => (

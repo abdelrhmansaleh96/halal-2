@@ -16,7 +16,7 @@ export const MapItem: React.FC<MapItemProps> = ({ icon, title, className }) => {
       className={`flex flex-col justify-center items-center cursor-pointer ${className}`}
     >
       <img src={icon} alt="icon" className="w-10 h-auto" />
-      <p className="text-base font-bold text-white text-primary-foreground">{title}</p>
+      <p className="hidden text-base font-bold text-white md:block text-primary-foreground">{title}</p>
     </motion.div>
   );
 };

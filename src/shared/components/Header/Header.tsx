@@ -10,8 +10,8 @@ export const Header: React.FC = () => {
 
   return (
     <header className="bg-secondary w-full h-[90px] lg:h-[120px] flex items-center py-3 px-7 md:px-16 lg:px-[70px] justify-between">
-      <img src={logo} alt="logo" className="h-[60px] lg:h-[80px] w-56 md:w-auto" />
-      <div className="flex flex-row md:flex-col justify-center items-center md:items-end gap-4 xl:gap-6 h-full">
+      <img src={logo} alt="logo" className="h-[60px] lg:h-[80px] w-48 sm:w-56 md:w-auto" />
+      <div className="flex flex-col-reverse items-end justify-center h-full gap-4 xs:items-center sm:flex-row md:flex-col md:items-end xl:gap-6">
         <LanguageToggle />
         <div className="hidden md:block">
           <NavLinks />
