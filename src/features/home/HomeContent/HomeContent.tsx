@@ -5,8 +5,10 @@ import { FadingAnimation } from "@appSharedComponents/fadingAnimation/FadingAnim
 import { HomeBenefits } from "../homeBenefits/HomeBenefits";
 import { HomeHero } from "../HomeHero/HomeHero";
 import ProductsSection from "../../../shared/components/productsSection/productsSection";
+import { useTranslation } from "react-i18next";
 
 export const HomeContent: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <FadingAnimation>
       <div id="home" className="flex flex-col">
@@ -19,9 +21,9 @@ export const HomeContent: React.FC = () => {
           ProductTitleClassName="home-product-title"
         />
         <ContactUsSection
-          title="Need to be Halal Certified "
+          title="services.needCertificates"
           description="Subscribe to get the benefits of IS EG Halal certification around the world"
-          btnText="Contact us"
+          btnText={t("contact")}
         />
       </div>
     </FadingAnimation>

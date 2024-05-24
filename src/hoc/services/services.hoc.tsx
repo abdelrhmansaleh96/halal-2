@@ -18,7 +18,7 @@ export const ServicesHOC = () => {
       <ContactUsSection
         title="For more information"
         description="If you have any question or inquiry press the button Help me"
-        btnText="Submit your Inquiry"
+        btnText="services.submitYourInQuiry"
       />
     </section>
   );
