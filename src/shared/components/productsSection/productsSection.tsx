@@ -52,9 +52,10 @@ const ProductsSection = ({
       <MainContainer className="xxl:pb-[34px] xl:pb-[28px] lg:pb-[20px] md:pb-[16px] pb-[12px]">
         <CustomBreadcrumbs breadcrumbs={breadcrumbs} />
         <SectionSubTitle
-          text="Certified Products from
-IS EG Halal"
-          className={` max-w-[48rem] ${sectionSubTitleClassName && sectionSubTitleClassName}`}
+          text={t("homeBenefits.iseg")}
+          className={` max-w-[48rem] ${
+            sectionSubTitleClassName && sectionSubTitleClassName
+          }`}
         />
       </MainContainer>
       <ProductsSlider>
@@ -64,7 +65,9 @@ IS EG Halal"
             img={product.img}
             title={product.title}
             productCardClassName={productCardClassName && productCardClassName}
-            ProductTitleClassName={ProductTitleClassName && ProductTitleClassName}
+            ProductTitleClassName={
+              ProductTitleClassName && ProductTitleClassName
+            }
           />
         ))}
       </ProductsSlider>
