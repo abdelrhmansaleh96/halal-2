@@ -16,10 +16,9 @@ export const ContactUsSection: React.FC = () => {
       <MainContainer>
         <div className="flex flex-col items-center justify-center w-full gap-8 md:flex-row md:justify-between">
           <div className="flex flex-col gap-3">
-            <SectionSubTitle text="Need to be Halal Certified" />
+            <SectionSubTitle text={t("homeBenefits.needCertificates")} />
             <p className="text-lg lg:text-[28px]">
-              Subscribe to get the benefits of IS EG Halal certification around
-              the world
+              {t("homeBenefits.subscribeHalal")}
             </p>
           </div>
           <Button
