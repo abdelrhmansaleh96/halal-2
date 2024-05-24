@@ -18,7 +18,7 @@ const NavLinks: React.FC = () => {
     },
     {
       to: "/about-us",
-      text: t("aboutUs"),
+      text: t("links.aboutUs"),
     },
   ];
   return (
