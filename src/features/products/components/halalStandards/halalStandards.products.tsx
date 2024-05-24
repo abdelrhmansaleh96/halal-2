@@ -1,8 +1,10 @@
+import "./halalStandards.products.scss";
+
+import CardTitle from "@/shared/components/cardTitle/cardTitle";
+import { HalalStandardsTitle } from "../../shared";
 import MainContainer from "@/shared/components/mainContainer/mainContainer";
 import SectionSubTitle from "@/shared/components/sectionSubTitle/sectionSubTitle";
-import { HalalStandardsTitle } from "../../shared";
-import CardTitle from "@/shared/components/cardTitle/cardTitle";
-import "./halalStandards.products.scss";
+
 export const HalalStandardsProducts = () => {
   return (
     <div className="bg-[#C09300] xxl:py-[76px] xl:py-[64px] lg:py-[48px] md:py-[36px] py-[24px]  halal-standards">

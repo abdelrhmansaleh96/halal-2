@@ -1,5 +1,6 @@
 import "./productsSection.scss";
 
+import { CustomBreadcrumbs } from "../customBreadcrumbs/customBreadcrumbs";
 import MainContainer from "@appSharedComponents/mainContainer/mainContainer";
 import ProductCard from "@/shared/components/productCard/productCard";
 import { ProductsSlider } from "../productsSlider/productsSlider";
@@ -10,6 +11,7 @@ import product1 from "@appImg/products/product1.png";
 import product2 from "@appImg/products/product2.png";
 import product3 from "@appImg/products/product3.png";
 import product4 from "@appImg/products/product4.png";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   productsWrapperClassName?: string;
@@ -30,6 +32,17 @@ const ProductsSection = ({
     { img: product3, title: "Personal care" },
     { img: product4, title: "Meat packing" },
   ];
+  const { t } = useTranslation();
+  const breadcrumbs = [
+    {
+      name: t("links.home"),
+      path: "/",
+    },
+    {
+      name: t("links.certifiedProducts"),
+      path: "/certified-products",
+    },
+  ];
   return (
     <div
       className={`xxl:py-[62px] xl:py-[48px] lg:py-[36px] md:py-[24px] py-[16px] products-wrapper ${
@@ -37,12 +50,11 @@ const ProductsSection = ({
       } `}
     >
       <MainContainer className="xxl:pb-[34px] xl:pb-[28px] lg:pb-[20px] md:pb-[16px] pb-[12px]">
+        <CustomBreadcrumbs breadcrumbs={breadcrumbs} />
         <SectionSubTitle
           text="Certified Products from
 IS EG Halal"
-          className={` max-w-[48rem] ${
-            sectionSubTitleClassName && sectionSubTitleClassName
-          }`}
+          className={` max-w-[48rem] ${sectionSubTitleClassName && sectionSubTitleClassName}`}
         />
       </MainContainer>
       <ProductsSlider>
@@ -52,9 +64,7 @@ IS EG Halal"
             img={product.img}
             title={product.title}
             productCardClassName={productCardClassName && productCardClassName}
-            ProductTitleClassName={
-              ProductTitleClassName && ProductTitleClassName
-            }
+            ProductTitleClassName={ProductTitleClassName && ProductTitleClassName}
           />
         ))}
       </ProductsSlider>
