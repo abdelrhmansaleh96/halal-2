@@ -23,7 +23,7 @@ export const SpecificationsAccreditation = () => {
     <>
       <div className="w-full xxl:py-[65px] xl:py-[60px] lg:py-[48px] md:py-[36px] py-[24px]  specifications-wrapper">
         <MainContainer>
-          <div className="grid grid-cols-1 lg:grid-cols-2 -specifications-contents">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 -specifications-contents">
             <div className="flex flex-col xxl:gap-[52px] xl:gap-[36px] lg:gap-[24px] md:gap-[18px] gap-[12px] --specifications-content">
               <div>
                 <SectionSubTitle
@@ -37,7 +37,7 @@ export const SpecificationsAccreditation = () => {
                   className="!font-bold !text-[#1E2124]"
                   text="Requirements for Slaughtering Animals According to Islamic Law"
                 />
-                <div className="flex gap-x-2 flex-wrap">
+                <div className="flex gap-2 flex-wrap">
                   <DescriptionTextAbout
                     className="bg-[#F5F7F8] xxl:px-[66px] xl:px-[54px] lg:px-[48px] md:px-[32px] px-[24px] xxl:rounded-[16px] lg:rounded-[12px] rounded-[8px] xxl:py-[16px] xl:py-[14px] lg:py-[12px] md:py-[10px] py-[8px]  "
                     text="GSO 993"
@@ -65,6 +65,32 @@ export const SpecificationsAccreditation = () => {
                     />
                   ))}
                 </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col xxl:gap-[20px] xl:gap-[18px] lg:gap-[16px] md:gap-[14px] gap-[12px] h-fit bg-[#C09300] xxl:px-[60px] xl:px-[48px] lg:px-[36px] md:px-[24px] px-[12px] xxl:py-[55px] xl:py-[48px] lg:py-[36px] md:py-[24px] py-[16px] --specifications-content">
+              <SectionSubTitle
+                className="max-w-[400px] text-white"
+                text="Accreditation Scope"
+              />
+              <DescriptionTextAbout
+                text="ISEG HALAL has been accredited according to the following international Standards:"
+                className=" text-white"
+              />
+
+              <div className="grid grid-cols-2 gap-6 ">
+                <DescriptionTextAbout
+                  className="bg-[#F5F7F8] text-center xxl:rounded-[16px] lg:rounded-[12px] rounded-[8px] xxl:py-[16px] xl:py-[14px] lg:py-[12px] md:py-[10px] py-[8px]  "
+                  text="GSO 2055-2"
+                />
+                <DescriptionTextAbout
+                  className="bg-[#F5F7F8] text-center xxl:rounded-[16px] lg:rounded-[12px] rounded-[8px] xxl:py-[16px] xl:py-[14px] lg:py-[12px] md:py-[10px] py-[8px]  "
+                  text="UAE.S 2055-2"
+                />
+                <DescriptionTextAbout
+                  className="bg-[#F5F7F8] text-center xxl:rounded-[16px] lg:rounded-[12px] rounded-[8px] xxl:py-[16px] xl:py-[14px] lg:py-[12px] md:py-[10px] py-[8px]  "
+                  text="OIC/SMIC:2"
+                />
               </div>
             </div>
           </div>
