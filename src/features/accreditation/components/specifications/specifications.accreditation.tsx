@@ -58,8 +58,9 @@ export const SpecificationsAccreditation = () => {
                   text="General Requirements for Halal Foods &Halal Product According to Islamic Sharia"
                 />
                 <div className="grid grid-cols-3 gap-2 ">
-                  {generalRequirements.map((generalRequirement) => (
+                  {generalRequirements.map((generalRequirement, index) => (
                     <DescriptionTextAbout
+                      key={index}
                       className="bg-[#F5F7F8] text-center lg:rounded-[12px] rounded-[8px] xxl:py-[16px] xl:py-[14px] lg:py-[12px] md:py-[10px] py-[8px] !font-bold  "
                       text={generalRequirement}
                     />
