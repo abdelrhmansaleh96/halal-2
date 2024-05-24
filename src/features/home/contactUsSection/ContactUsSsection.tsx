@@ -4,8 +4,12 @@ import { MoveRight } from "lucide-react";
 import SectionSubTitle from "@appSharedComponents/sectionSubTitle/sectionSubTitle";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
-export const ContactUsSection: React.FC = () => {
+type Props = {
+  title: string;
+  description: string;
+  btnText: string;
+};
+export const ContactUsSection = ({ title, description, btnText }: Props) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const handleContactUs = () => {
@@ -25,7 +29,7 @@ export const ContactUsSection: React.FC = () => {
             className="font-normal text-black bg-transparent border-[1.5px] border-black w-fit rounded-2xl text-xl md:text-3xl h-auto hover:text-white hover:border-transparent"
             onClick={handleContactUs}
           >
-            {t("contact")}
+            {btnText}
             <MoveRight size={24} className="w-8 ml-6 " />
           </Button>
         </div>
