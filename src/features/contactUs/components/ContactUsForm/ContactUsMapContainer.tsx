@@ -5,9 +5,26 @@ import { useTranslation } from "react-i18next";
 
 interface ContactUsMapContainerProps {
   handleSetCountry: (country: string) => void;
+  selectedCountry: {
+    id: string;
+    branchName: string;
+    branchFlag: string;
+    contactInfoItems: {
+      icon?: string;
+      title: string;
+      description: string;
+    }[];
+  };
+  openModal: boolean;
+  setOpenModal: (openModal: boolean) => void;
 }
 
-export const ContactUsMapContainer: React.FC<ContactUsMapContainerProps> = ({ handleSetCountry }) => {
+export const ContactUsMapContainer: React.FC<ContactUsMapContainerProps> = ({
+  handleSetCountry,
+  selectedCountry,
+  openModal,
+  setOpenModal,
+}) => {
   const { t } = useTranslation();
   const breadcrumbs = [
     {
@@ -23,7 +40,12 @@ export const ContactUsMapContainer: React.FC<ContactUsMapContainerProps> = ({ ha
     <div className="w-full h-100% md:h-[calc(100vh-120px)] pt-4 bg-muted">
       <MainContainer>
         <CustomBreadcrumbs breadcrumbs={breadcrumbs} />
-        <ContactUsMap handleSetCountry={handleSetCountry} />
+        <ContactUsMap
+          handleSetCountry={handleSetCountry}
+          selectedCountry={selectedCountry}
+          openModal={openModal}
+          setOpenModal={setOpenModal}
+        />
       </MainContainer>
     </div>
   );

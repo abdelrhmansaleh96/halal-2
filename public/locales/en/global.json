@@ -78,5 +78,16 @@
     "generalRequirementsIslamicSharia": "General Requirements for Halal Foods &Halal Product According to Islamic Sharia",
     "accreditationScope": "Accreditation Scope",
     "followingInternationalStandards": "ISEG HALAL has been accredited according to the following international Standards:"
+  },
+  "countries": {
+    "egyptBranch": "Egypt Branch",
+    "indiaBranch": "India Branch",
+    "brazilBranch": "Brazil Branch",
+    "usaBranch": "USA Branch",
+    "uyBranch": "Uruguay Branch",
+    "germanyBranch": "Germany Branch",
+    "nzBranch": "New Zealand Branch",
+    "address": "Address",
+    "email": "Email"
   }
 }

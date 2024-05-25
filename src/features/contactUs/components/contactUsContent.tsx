@@ -20,16 +20,16 @@ export const ContactUsContent: React.FC = () => {
   const countries = [
     {
       id: "eg",
-      branchName: "Egypt Branch",
+      branchName: t("countries.egyptBranch"),
       branchFlag: egFlag,
       contactInfoItems: [
         {
-          title: "Address",
+          title: t("countries.address"),
           description: "City Center, New Cairo 1, Cairo Governorate 11865",
         },
         {
           icon: emailIcon,
-          title: "Email",
+          title: t("countries.email"),
           description: "egypt@iseghalal-eg.com",
         },
         {
@@ -41,55 +41,55 @@ export const ContactUsContent: React.FC = () => {
     },
     {
       id: "in",
-      branchName: "India Branch",
+      branchName: t("countries.indiaBranch"),
       branchFlag: indiaFlag,
       contactInfoItems: [
         {
           icon: emailIcon,
-          title: "Email",
+          title: t("countries.email"),
           description: "India@iseghalal-egy.com",
         },
       ],
     },
     {
       id: "br",
-      branchName: "Brazil Branch",
+      branchName: t("countries.brazilBranch"),
       branchFlag: brazilFlag,
       contactInfoItems: [
         {
           icon: emailIcon,
-          title: "Email",
+          title: t("countries.email"),
           description: "Brazil@iseghalal-egy.com",
         },
       ],
     },
     {
       id: "uy",
-      branchName: "Urguay Branch",
+      branchName: t("countries.uyBranch"),
       branchFlag: uyFlag,
       contactInfoItems: [
         {
           icon: emailIcon,
-          title: "Email",
+          title: t("countries.email"),
           description: "urguay@iseghalal-egy.com",
         },
       ],
     },
     {
       id: "us",
-      branchName: "USA Branch",
+      branchName: t("countries.usaBranch"),
       branchFlag: usFlag,
       contactInfoItems: [
         {
           icon: emailIcon,
-          title: "Email",
+          title: t("countries.email"),
           description: "usa@iseghalal-egy.com",
         },
       ],
     },
     {
       id: "de",
-      branchName: "Germany Branch",
+      branchName: t("countries.germanyBranch"),
       branchFlag: germanyFlag,
       contactInfoItems: [
         {
@@ -101,12 +101,12 @@ export const ContactUsContent: React.FC = () => {
     },
     {
       id: "nz",
-      branchName: "New Zwaland Branch",
+      branchName: t("countries.nzBranch"),
       branchFlag: newZwalandFlag,
       contactInfoItems: [
         {
           icon: emailIcon,
-          title: "Email",
+          title: t("countries.email"),
           description: "newzwaland@iseghalal-egy.com",
         },
       ],
@@ -114,6 +114,7 @@ export const ContactUsContent: React.FC = () => {
   ];
 
   const [selectedCountry, setSelectedCountry] = useState(countries[0]);
+  const [openModal, setOpenModal] = useState(false);
   const handleSetCountry = (countryId: string) => {
     const country = countries.find((country) => country.id === countryId);
     if (country) {
@@ -123,7 +124,12 @@ export const ContactUsContent: React.FC = () => {
   return (
     <FadingAnimation>
       <div className="flex flex-col">
-        <ContactUsMapContainer handleSetCountry={handleSetCountry} />
+        <ContactUsMapContainer
+          handleSetCountry={handleSetCountry}
+          selectedCountry={selectedCountry}
+          openModal={openModal}
+          setOpenModal={setOpenModal}
+        />
         {selectedCountry && <ContactFormContainer selectedCountry={selectedCountry} />}
       </div>
     </FadingAnimation>

@@ -1,8 +1,10 @@
 import "./contactUsMap.scss";
 
+import { ContactModal } from "../contactModal.component";
 import { MapItem } from "./mapItem";
 import SectionSubTitle from "@/shared/components/sectionSubTitle/sectionSubTitle";
 import brMd from "@appImg/icons/br-md.svg";
+import closeIcon from "../../../../assets/icons/close_small.svg";
 import duMd from "@appImg/icons/du-md.svg";
 import egMd from "@appImg/icons/eg-md.svg";
 import inMd from "@appImg/icons/in-md.svg";
@@ -15,9 +17,26 @@ import uyMd from "@appImg/icons/uy-md.svg";
 
 interface ContactUsMapProps {
   handleSetCountry: (country: string) => void;
+  selectedCountry: {
+    id: string;
+    branchName: string;
+    branchFlag: string;
+    contactInfoItems: {
+      icon?: string;
+      title: string;
+      description: string;
+    }[];
+  };
+  openModal: boolean;
+  setOpenModal: (openModal: boolean) => void;
 }
 
-export const ContactUsMap: React.FC<ContactUsMapProps> = ({ handleSetCountry }) => {
+export const ContactUsMap: React.FC<ContactUsMapProps> = ({
+  handleSetCountry,
+  selectedCountry,
+  openModal,
+  setOpenModal,
+}) => {
   const flags = [
     {
       id: "eg",
@@ -81,7 +100,10 @@ export const ContactUsMap: React.FC<ContactUsMapProps> = ({ handleSetCountry }) 
                 icon={flag.icon}
                 title={flag.title}
                 className={flag.className}
-                handleSetCountry={handleSetCountry}
+                handleSetCountry={() => {
+                  handleSetCountry(flag.id);
+                  setOpenModal(true);
+                }}
                 id={flag.id}
               />
             ))}
@@ -89,6 +111,19 @@ export const ContactUsMap: React.FC<ContactUsMapProps> = ({ handleSetCountry }) 
           <img src={mapBg} alt="map-bg" className="bg-image" />
         </div>
       </div>
+      {openModal && (
+        <div className="contact-modal">
+          <img
+            src={closeIcon}
+            alt="close"
+            className="close-icon"
+            onClick={() => {
+              setOpenModal(false);
+            }}
+          />
+          <ContactModal selectedCountry={selectedCountry} />
+        </div>
+      )}
     </div>
   );
 };

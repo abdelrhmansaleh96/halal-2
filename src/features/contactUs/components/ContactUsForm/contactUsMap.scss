@@ -87,6 +87,18 @@
       left: auto;
     }
   }
+  .contact-modal {
+    position: absolute;
+    right: 0rem;
+    bottom: 5rem;
+    .close-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 99898;
+      cursor: pointer;
+    }
+  }
 }
 
 @media (max-width: 768px) {
