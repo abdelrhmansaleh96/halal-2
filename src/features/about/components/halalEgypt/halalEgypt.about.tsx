@@ -25,21 +25,17 @@ export const HalalEgyptAbout = () => {
       <AboutContainer>
         <div className="grid grid-cols-1 lg:grid-cols-2 xxl:gap-[65px] xl:gap-[60px] lg:gap-[48px] md:gap-[36px] gap-[24px] -halal-egypt-content-wrapper">
           <h2 className="font-bold --halal-egypt-title">
-            IS EG Halal <br />
-            Egypt
+            {t("aboutUs.ISEGHalal")} <br />
+            {t("aboutUs.Egypt")}
           </h2>
           <DescriptionTextAbout
-            text="Our expert team, comprising Islamic scholars and veterinary experts
-            assigned by the Egyptian Ministry of Religious Endowments and the
-            Veterinary Services Authority ,ensures that the certification
-            process adheres to global standards and Islamic rules."
+            text={t("aboutUs.ISEGHalalEgyptParagraphOne")}
           />
-          <DescriptionTextAbout text="We are the exclusive authority authorized by the Egyptian Government to certify Halal exports worldwide." />
           <DescriptionTextAbout
-            text="We operate with transparency, accuracy, and strict adherence to
-            international regulations. Our commitment extends beyond
-            certification; it contributes significantly to Egypt’s reputation in
-            the global market"
+            text={t("aboutUs.ISEGHalalEgyptParagraphTwo")}
+          />
+          <DescriptionTextAbout
+            text={t("aboutUs.ISEGHalalEgyptParagraphThree")}
           />
         </div>
       </AboutContainer>
