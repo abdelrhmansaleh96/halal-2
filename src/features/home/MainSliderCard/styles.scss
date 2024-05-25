@@ -12,3 +12,22 @@
 .rtl-direction {
   direction: ltr;
 }
+
+@media (max-width: 767px) {
+  .main-card {
+    border-radius: 2rem;
+  }
+}
+
+.slick-dots {
+  li {
+    button::before {
+      color: white;
+    }
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  color: #c09300;
+  // width: 40px;
+}

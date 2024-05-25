@@ -10,6 +10,7 @@ import egMd from "@appImg/icons/eg-md.svg";
 import inMd from "@appImg/icons/in-md.svg";
 import map from "@appImg/map.png";
 import mapBg from "@appImg/map-bg.png";
+import { motion } from "framer-motion";
 import nzMd from "@appImg/icons/nz-md.svg";
 import usMd from "@appImg/icons/us-md.svg";
 import { useTranslation } from "react-i18next";
@@ -112,7 +113,21 @@ export const ContactUsMap: React.FC<ContactUsMapProps> = ({
         </div>
       </div>
       {openModal && (
-        <div className="contact-modal">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 100,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          exit={{
+            opacity: 0,
+            y: 100,
+          }}
+          className="contact-modal"
+        >
           <img
             src={closeIcon}
             alt="close"
@@ -122,7 +137,7 @@ export const ContactUsMap: React.FC<ContactUsMapProps> = ({
             }}
           />
           <ContactModal selectedCountry={selectedCountry} />
-        </div>
+        </motion.div>
       )}
     </div>
   );
