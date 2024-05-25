@@ -131,5 +131,19 @@
     "enterYourPhoneNumber": "Enter your phone number",
     "ChooseSubjectPlaceholder": "Ask about product",
     "yourMessagePlaceholder": "Enter your inquiry message"
+  },
+  "mainSlider": {
+    "firstItem": {
+      "title": "Discover Everything that is Halal",
+      "description": "Halal food refers to what is permissible or lawful in traditional Islamic law"
+    },
+    "secondItem": {
+      "title": "Certification process For Shipment",
+      "description": "Any entity worldwide interested in exporting foods and other products to Egypt and the Muslim world."
+    },
+    "thirdItem": {
+      "title": "Certification process For Quality Control",
+      "description": "We strive to prosper with companies of all calibers, guiding them through the Halal Certification process."
+    }
   }
 }

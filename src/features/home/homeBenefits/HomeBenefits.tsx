@@ -1,12 +1,7 @@
-import { BenefitsCard } from "./BenefitsCard";
 import { MainContainer } from "@appSharedComponents/main-container/MainContainer";
-import SectionSubTitle from "@appSharedComponents/sectionSubTitle/sectionSubTitle";
-import iconOne from "@appImg/quality.svg";
-import { useTranslation } from "react-i18next";
 import BenefitsIssuingCertificates from "@/shared/components/benefitsIssuingCertificates/benefitsIssuingCertificates";
 
 export const HomeBenefits: React.FC = () => {
-  const { t } = useTranslation();
   // const benefits: {
   //   title: string;
   //   description: string;

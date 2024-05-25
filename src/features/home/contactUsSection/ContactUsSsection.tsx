@@ -9,7 +9,7 @@ type Props = {
   description: string;
   btnText: string;
 };
-export const ContactUsSection = ({ title, description, btnText }: Props) => {
+export const ContactUsSection = ({ btnText }: Props) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const handleContactUs = () => {
