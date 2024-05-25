@@ -5,6 +5,7 @@ const links = [
   { text: "links.home", to: "./" },
   { text: "links.services", to: "./services" },
   { text: "links.certifiedProducts", to: "./certified-products" },
+  { text: "links.accreditation", to: "./accreditation" },
   { text: "links.aboutUs", to: "./about-us" },
   { text: "contact", to: "./contact-us" },
 ];

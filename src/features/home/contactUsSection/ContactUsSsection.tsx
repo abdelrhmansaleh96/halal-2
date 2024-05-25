@@ -29,7 +29,7 @@ export const ContactUsSection = ({ title, description, btnText }: Props) => {
             className="font-normal text-black bg-transparent border-[1.5px] border-black w-fit rounded-2xl text-xl md:text-3xl h-auto hover:text-white hover:border-transparent"
             onClick={handleContactUs}
           >
-            {btnText}
+            {t(btnText)}
             <MoveRight size={24} className="w-8 ml-6 " />
           </Button>
         </div>

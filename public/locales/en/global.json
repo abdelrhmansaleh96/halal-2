@@ -33,5 +33,50 @@
   "contactUs": {
     "help": "Need Help?",
     "helpDescription": "If you have any question or inquiry please don't hesitate to send the inquiry message, and we reply to you as soon as."
+  },
+  "services": {
+    "certificationProcess": "Certification Process",
+    "obtainingCertificate": "Obtaining (Issuing) of Halal certificate",
+    "approvalCertification": "Approval committee of certification",
+    "auditing": "Inspection and verification (Auditing)",
+    "fulfillment": "Fulfillment the required",
+    "ISEGHalalUsers": "ISEG Halal Users",
+    "ISEGHalalParagraph": "ISEG Halal specializes in efficient halal certification services, making it easy for Importers and exporters of Halal products as well as entities worldwide interested in exporting foods and other products to Egypt to obtain and validate halal certificates. Our streamlined process ensures compliance within the halal system, providing peace of mind for businesses and consumers alike.",
+    "ISEGHalalParagraphTwo": "ISEG Halal specializes in efficient halal certification services, making it easy for Importers and exporters of Halal products as well as entities worldwide interested in exporting foods and other products to Egypt to obtain and validate halal certificates. Our streamlined process ensures compliance within the halal system, providing peace of mind for businesses and consumers alike.",
+    "importersParagraph": "ISEG HALA Importers are Egyptian businesses seeking to import shipments from abroad. To receive Halal accreditation and certification for their requested shipments, they must be accredited by ISEG Importer in accordance with ISEG policies and regulations",
+    "importersTitle": "Importers",
+    "suppliers": "suppliers",
+    "suppliersParagraph": "ISEG Suppliers refer to companies or slaughterhouses located outside Egypt that seek to supply their products to Egypt and are requesting Halal Egypt accreditation.",
+    "certificationServiceprovider": "Certification for Service provider",
+    "providerParagraphOne": "Our Service providers agents simplifies the process of obtaining the required certifications worldwide and ensures compliance with rigorous accreditation following ISEG specified standards . At ISEG Halal, we carefully select service providers based on international criteria.",
+    "providerParagraphTwo": "After thorough evaluation, we grant accreditation to qualified agents, affirming their competence in handling certification processes. This accreditation reinforces the safety and integrity of the certification extraction process under the supervision of ISEG Hala.",
+    "shipmentsCertifications": "ISEG HALAL Shipments Certifications",
+    "certificationExportShipment": "Halal Certification for Export Shipment",
+    "ISEGSuppliersParagraph": "ISEG Suppliers refer to companies or slaughterhouses located outside Egypt that seek to supply their products to Egypt and are requesting Halal Egypt accreditation.",
+    "certificationImportShipment": "Halal Certification for Import Shipment",
+    "certificationImportShipmentParagraph": "ISEG issues Halal certificates for exported shipments, our expert team ensures rigorous validation and inspection. We verify that the goods adhere to Islamic guidelines and meet international health standards. Simply submit the necessary shipment documents, and our team will handle the entire process within Egypt—from production to issuing the required Halal certificate and facilitating export. Trust ISEG for accurate and efficient Halal certification.",
+    "submitYourInQuiry": "Submit your Inquiry"
+  },
+  "certifiedProducts": {
+    "HalalStandards": "ISEG HALA Specifications ",
+    "HalalStandards-sub": "ISEG HALAL is to issuing HALAL certificates to various entities and its products according to the following specifications:",
+    "HalalStandardsAndRegulations": "Halal Standards and regulations:",
+    "ISEGHALALInternationalSpecifications": "ISEG HALAL applies Halal standards according to the relevant international specifications:",
+    "whoAreOurClients": "Who are our clients?",
+    "whoAreOurClientsParagraphOne": "Any entity worldwide interested in exporting foods and other products to Egypt and the Muslim world.",
+    "whoAreOurClientsParagraphTwo": "We strive to prosper with companies of all calibers, guiding them through the Halal Certification process."
+  },
+  "accreditationAndSpecifications": {
+    "professionalPerformance": "Professional Performance",
+    "professionalPerformanceParagraphOne": "To support the goals of the sustainable development and to ensure the professional performance of ISEG HALAL, as the certification body, which grants Halal certificates, the company has been accredited by the Egyptian accreditation council (EGAC) in accordance with:",
+    "professionalPerformanceParagraphTwo": "The requirements of international Accreditation forum (IAF)",
+    "professionalPerformanceParagraphThree": "International Halal Accreditation forum (IHAF)",
+    "professionalPerformanceParagraphFour": "And the standard and metrology institute for Islamic Countries (SMIIC).",
+    "ISEGHALASpecifications": "ISEG HALA Specifications",
+    "RequirementsIslamicLaw": "Requirements for Slaughtering Animals According to Islamic Law",
+    "issuingCertificates": "ISEG HALAL is to issuing HALAL certificates to various entities and its products according to the following specifications:",
+    "generalRequirementsIslamicSharia": "General Requirements for Halal Foods &Halal Product According to Islamic Sharia",
+    "accreditationScope": "Accreditation Scope",
+    "followingInternationalStandards": "ISEG HALAL has been accredited according to the following international Standards:"
   }
 }

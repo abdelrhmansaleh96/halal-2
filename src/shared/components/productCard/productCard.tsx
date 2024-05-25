@@ -7,7 +7,12 @@ export type Props = {
   img: string;
 };
 
-const ProductCard = ({ productCardClassName, title, img, ProductTitleClassName }: Props) => {
+const ProductCard = ({
+  productCardClassName,
+  title,
+  img,
+  ProductTitleClassName,
+}: Props) => {
   return (
     <div
       style={{ backgroundImage: `url(${img})` }}
@@ -16,7 +21,7 @@ const ProductCard = ({ productCardClassName, title, img, ProductTitleClassName }
       }`}
     >
       <h5
-        className={`font-semibold text-center text-black  w-full xl:py-[18px] lg:py-[16px] md:py-[14px] py-[12px] -product-card-title  ${
+        className={`font-semibold text-center text-white  w-full xl:py-[18px] lg:py-[16px] md:py-[14px] py-[12px] -product-card-title  ${
           ProductTitleClassName && ProductTitleClassName
         } `}
       >

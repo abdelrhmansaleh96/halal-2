@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import "./cardDescription.scss";
 interface Props {
   text: string;
@@ -5,13 +6,15 @@ interface Props {
 }
 
 const CardDescription = ({ className, text }: Props) => {
+  const { t } = useTranslation();
+
   return (
     <h4
       className={`font-normal text-[#AEAEAE]  card-description ${
         className && className
       }`}
     >
-      {text}
+      {t(text)}
     </h4>
   );
 };
