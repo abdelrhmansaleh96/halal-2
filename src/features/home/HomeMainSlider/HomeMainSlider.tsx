@@ -22,7 +22,6 @@ export const HomeMainSlider: React.FC = () => {
         <MainSliderCard />
         <MainSliderCard />
         <MainSliderCard />
-        <MainSliderCard />
       </Slider>
     </MainContainer>
   );

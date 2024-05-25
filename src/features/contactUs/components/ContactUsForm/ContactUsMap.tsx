@@ -41,54 +41,57 @@ export const ContactUsMap: React.FC<ContactUsMapProps> = ({
     {
       id: "eg",
       icon: egMd,
-      title: "Egypt",
+      title: "countries.egypt",
       className: "eg-flag",
     },
     {
       id: "du",
       icon: duMd,
-      title: "German",
+      title: "countries.Germany",
       className: "du-flag",
     },
     {
       id: "nz",
       icon: nzMd,
-      title: "New Zealand",
+      title: "countries.NewZealand",
       className: "nz-flag",
     },
     {
       id: "br",
       icon: brMd,
-      title: "Brazil",
+      title: "countries.brazil",
       className: "br-flag",
     },
     {
       id: "us",
       icon: usMd,
-      title: "United States",
+      title: "countries.usa",
       className: "us-flag",
     },
     {
       id: "uy",
       icon: uyMd,
-      title: "Uruguay",
+      title: "countries.uruguay",
       className: "uy-flag",
     },
     {
       id: "in",
       icon: inMd,
-      title: "India",
+      title: "countries.india",
       className: "in-flag",
     },
   ];
 
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const rtl = i18n.dir() === "rtl";
 
   return (
     <div className="contact-map">
       <div className="title">
-        <SectionSubTitle text="Explore our Locations" className="text-white" />
+        <SectionSubTitle
+          text={t("countries.exploreOurLocations")}
+          className="text-white"
+        />
       </div>
       <div className="map">
         <img src={map} alt="map" className="object-contain sm:object-initial" />

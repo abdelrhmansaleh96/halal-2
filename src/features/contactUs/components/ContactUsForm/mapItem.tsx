@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 type MapItemProps = {
   icon: string;
@@ -8,7 +9,14 @@ type MapItemProps = {
   handleSetCountry: (country: string) => void;
 };
 
-export const MapItem: React.FC<MapItemProps> = ({ icon, title, className, id, handleSetCountry }) => {
+export const MapItem: React.FC<MapItemProps> = ({
+  icon,
+  title,
+  className,
+  id,
+  handleSetCountry,
+}) => {
+  const { t } = useTranslation();
   return (
     <motion.div
       whileHover={{
@@ -21,7 +29,9 @@ export const MapItem: React.FC<MapItemProps> = ({ icon, title, className, id, ha
       }}
     >
       <img src={icon} alt="icon" className="w-10 h-auto" />
-      <p className="hidden text-base font-bold text-white md:block text-primary-foreground">{title}</p>
+      <p className="hidden text-base font-bold text-white md:block text-primary-foreground">
+        {t(title)}
+      </p>
     </motion.div>
   );
 };
