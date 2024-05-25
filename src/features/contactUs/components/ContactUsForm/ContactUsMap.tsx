@@ -10,46 +10,61 @@ import map from "@appImg/map.png";
 import mapBg from "@appImg/map-bg.png";
 import nzMd from "@appImg/icons/nz-md.svg";
 import usMd from "@appImg/icons/us-md.svg";
+import { useTranslation } from "react-i18next";
 import uyMd from "@appImg/icons/uy-md.svg";
 
-export const ContactUsMap: React.FC = () => {
+interface ContactUsMapProps {
+  handleSetCountry: (country: string) => void;
+}
+
+export const ContactUsMap: React.FC<ContactUsMapProps> = ({ handleSetCountry }) => {
   const flags = [
     {
+      id: "eg",
       icon: egMd,
       title: "Egypt",
       className: "eg-flag",
     },
     {
+      id: "du",
       icon: duMd,
       title: "German",
       className: "du-flag",
     },
     {
+      id: "nz",
       icon: nzMd,
       title: "New Zealand",
       className: "nz-flag",
     },
     {
+      id: "br",
       icon: brMd,
       title: "Brazil",
       className: "br-flag",
     },
     {
+      id: "us",
       icon: usMd,
       title: "United States",
       className: "us-flag",
     },
     {
+      id: "uy",
       icon: uyMd,
       title: "Uruguay",
       className: "uy-flag",
     },
     {
+      id: "in",
       icon: inMd,
       title: "India",
       className: "in-flag",
     },
   ];
+
+  const { i18n } = useTranslation();
+  const rtl = i18n.dir() === "rtl";
 
   return (
     <div className="contact-map">
@@ -59,9 +74,16 @@ export const ContactUsMap: React.FC = () => {
       <div className="map">
         <img src={map} alt="map" className="object-contain sm:object-initial" />
         <div className="map-overlay">
-          <div className="map-overlay--content">
+          <div className={`map-overlay--content ${rtl && "rtl"}`}>
             {flags.map((flag, index) => (
-              <MapItem key={index} icon={flag.icon} title={flag.title} className={flag.className} />
+              <MapItem
+                key={index}
+                icon={flag.icon}
+                title={flag.title}
+                className={flag.className}
+                handleSetCountry={handleSetCountry}
+                id={flag.id}
+              />
             ))}
           </div>
           <img src={mapBg} alt="map-bg" className="bg-image" />

@@ -13,6 +13,9 @@
     position: relative;
     display: flex;
     justify-content: center;
+    &.rtl {
+      direction: rtl !important;
+    }
   }
   .map-overlay {
     position: absolute;
@@ -31,6 +34,9 @@
       top: 0;
       left: 0;
       z-index: 99;
+      &.rtl {
+        direction: rtl !important;
+      }
       .eg-flag {
         grid-row: 11 / 12;
         grid-column: 27/29;

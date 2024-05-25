@@ -1,0 +1,14 @@
+.main-card {
+  border-top-left-radius: 1.5rem;
+}
+
+.main-card {
+  &.rtl {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 0;
+  }
+}
+
+.rtl-direction {
+  direction: ltr;
+}

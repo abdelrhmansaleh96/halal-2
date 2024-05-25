@@ -3,7 +3,11 @@ import { CustomBreadcrumbs } from "@/shared/components/customBreadcrumbs/customB
 import { MainContainer } from "@/shared/components/main-container/MainContainer";
 import { useTranslation } from "react-i18next";
 
-export const ContactUsMapContainer: React.FC = () => {
+interface ContactUsMapContainerProps {
+  handleSetCountry: (country: string) => void;
+}
+
+export const ContactUsMapContainer: React.FC<ContactUsMapContainerProps> = ({ handleSetCountry }) => {
   const { t } = useTranslation();
   const breadcrumbs = [
     {
@@ -19,7 +23,7 @@ export const ContactUsMapContainer: React.FC = () => {
     <div className="w-full h-100% md:h-[calc(100vh-120px)] pt-4 bg-muted">
       <MainContainer>
         <CustomBreadcrumbs breadcrumbs={breadcrumbs} />
-        <ContactUsMap />
+        <ContactUsMap handleSetCountry={handleSetCountry} />
       </MainContainer>
     </div>
   );

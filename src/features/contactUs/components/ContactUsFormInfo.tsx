@@ -1,32 +1,41 @@
 import { ContactInfoItem } from "./ContactInfoItem";
 import SectionSubTitle from "@appSharedComponents/sectionSubTitle/sectionSubTitle";
-import egFlag from "@appImg/flags/big-eg.svg";
-import emailIcon from "@appImg/icons/mail.svg";
-import phoneIcon from "@appImg/icons/phone.svg";
 import { useTranslation } from "react-i18next";
 
-export const ContactUsFormInfo = () => {
-  const { t } = useTranslation();
-  const egyptItem = {
-    branchName: "Egypt Branch",
-    branchFlag: egFlag,
-    contactInfoItems: [
-      {
-        title: "Address",
-        description: "City Center, New Cairo 1, Cairo Governorate 11865",
-      },
-      {
-        icon: emailIcon,
-        title: "Email",
-        description: "egypt@iseghalal-eg.com",
-      },
-      {
-        icon: phoneIcon,
-        title: "Phone",
-        description: "+20 1010005656",
-      },
-    ],
+interface ContactInfoItemPropss {
+  selectedCountry: {
+    branchName: string;
+    branchFlag: string;
+    contactInfoItems: {
+      icon?: string;
+      title: string;
+      description: string;
+    }[];
   };
+}
+
+export const ContactUsFormInfo: React.FC<ContactInfoItemPropss> = ({ selectedCountry }) => {
+  const { t } = useTranslation();
+  // const egyptItem = {
+  //   branchName: "Egypt Branch",
+  //   branchFlag: egFlag,
+  //   contactInfoItems: [
+  //     {
+  //       title: "Address",
+  //       description: "City Center, New Cairo 1, Cairo Governorate 11865",
+  //     },
+  //     {
+  //       icon: emailIcon,
+  //       title: "Email",
+  //       description: "egypt@iseghalal-eg.com",
+  //     },
+  //     {
+  //       icon: phoneIcon,
+  //       title: "Phone",
+  //       description: "+20 1010005656",
+  //     },
+  //   ],
+  // };
   return (
     <div className="flex flex-col gap-8 md:gap-16 xl:gap-28">
       <div className="flex flex-col gap-1 sm:gap-6 md:gap-8 xl:gap-10">
@@ -35,9 +44,9 @@ export const ContactUsFormInfo = () => {
       </div>
 
       <ContactInfoItemContainer
-        contactInfoItems={egyptItem.contactInfoItems}
-        branchName={egyptItem.branchName}
-        branchFlag={egyptItem.branchFlag}
+        contactInfoItems={selectedCountry.contactInfoItems}
+        branchName={selectedCountry.branchName}
+        branchFlag={selectedCountry.branchFlag}
       />
     </div>
   );

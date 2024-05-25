@@ -1,3 +1,5 @@
+import "./styles.scss";
+
 import { MainContainer } from "@appSharedComponents/main-container/MainContainer";
 import { MainSliderCard } from "../MainSliderCard/MainSliderCard";
 import Slider from "react-slick";
