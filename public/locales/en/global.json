@@ -79,6 +79,24 @@
     "accreditationScope": "Accreditation Scope",
     "followingInternationalStandards": "ISEG HALAL has been accredited according to the following international Standards:"
   },
+  "aboutUs": {
+    "ISEGHalal": "IS EG Halal",
+    "Egypt": "Egypt",
+    "ISEGHalalEgyptParagraphOne": "Our expert team, comprising Islamic scholars and veterinary experts assigned by the Egyptian Ministry of Religious Endowments and the Veterinary Services Authority ,ensures that the certification process adheres to global standards and Islamic rules.",
+    "ISEGHalalEgyptParagraphTwo": "We are the exclusive authority authorized by the Egyptian Government to certify Halal exports worldwide.",
+    "ISEGHalalEgyptParagraphThree": "We operate with transparency, accuracy, and strict adherence to international regulations. Our commitment extends beyond certification; it contributes significantly to Egypt’s reputation in the global market.",
+    "whyHalal": "Why should we choose Halal?",
+    "whyHalalParagraphOne": "Halal food refer to what is permissible or Lawful in Islamic Law. The concept of Halal food is not exclusive to fulfillment of slaughtering practices and the type of animal only, but other things that may cause hazard for people’s health and their life as God AL might says:",
+    "whyHalalParagraphTwo": "“And makes lawful for them the good things and prohibits for the evils” Al- A’raf 157",
+    "whyHalalParagraphThree": "Food safety is one of the fundamental requirements for human health as a great value that Muslims and other religious denominations are keen on.",
+    "mission": "Mission",
+    "missionParagraphOne": "ISEG HALAL'S mission is to work diligently with companies and slaughterhouses across the globe through the certification process of fresh halal products.",
+    "missionParagraphTwo": "We ensure that each step obeys all religious regulations and international standards for Halal food providing peace of mind to Muslim communities worldwide.",
+    "missionParagraphThree": "The opportunity to provide not only people from the Islamic word but also consumers of different backgrounds with healthier and religiously acceptable Halal products is a goal that we here at ISEGHALAL take with the utmost sincerity.",
+    "vision": "Vision",
+    "visionParagraphOne": "ISEG HALAL'S vision is to provide unparalleled Halal certification Services to All Industries.",
+    "visionParagraphTwo": "We aim to lead in serving the global demand Halal Certification Services through excellence in integrity, Knowledge, and service."
+  },
   "countries": {
     "egyptBranch": "Egypt Branch",
     "indiaBranch": "India Branch",
