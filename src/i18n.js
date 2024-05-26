@@ -20,7 +20,7 @@ i18n
 
   .init({
     fallbackLng: "ar",
-    supportedLngs: ["en", "ar", "du", "br", "hi"],
+    supportedLngs: ["en", "ar", "de", "pt", "hi", "es", "fr"],
     detection: options,
     backend: {
       loadPath: "/locales/{{lng}}/global.json",

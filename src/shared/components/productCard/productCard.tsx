@@ -7,21 +7,18 @@ export type Props = {
   img: string;
 };
 
-const ProductCard = ({
-  productCardClassName,
-  title,
-  img,
-  ProductTitleClassName,
-}: Props) => {
+const ProductCard = ({ productCardClassName, title, img, ProductTitleClassName }: Props) => {
   return (
     <div
       style={{ backgroundImage: `url(${img})` }}
-      className={`bg-cover rounded-[8px] xxl:py-[20px]  xxl:h-[496px] xl:h-[400px] lg:h-[320px] md:h-[280px] h-[200px] product-card-wrapper flex items-end mx-3  ${
+      className={`bg-cover rounded-[8px] xxl:py-[20px]  xxl:h-[496px] xl:h-[400px] lg:h-[320px] md:h-[280px] h-[200px] product-card-wrapper flex items-end mx-3 relative overflow-hidden ${
         productCardClassName && productCardClassName
       }`}
     >
+      {/* shadow to show the title  */}
+      <div className="absolute bottom-0 left-0 w-full h-full gradient" />
       <h5
-        className={`font-semibold text-center text-white  w-full xl:py-[18px] lg:py-[16px] md:py-[14px] py-[12px] -product-card-title  ${
+        className={`font-semibold text-center text-white  w-full xl:py-[18px] lg:py-[16px] md:py-[14px] py-[12px] -product-card-title relative  ${
           ProductTitleClassName && ProductTitleClassName
         } `}
       >

@@ -43,12 +43,7 @@ export const HomeMainSlider: React.FC = () => {
     <MainContainer oneSide={!matches}>
       <Slider {...settings}>
         {sliderItems.map((item, index) => (
-          <MainSliderCard
-            key={index}
-            img={item.img}
-            title={item.title}
-            description={item.description}
-          />
+          <MainSliderCard key={index} img={item.img} title={item.title} description={item.description} />
         ))}
       </Slider>
     </MainContainer>

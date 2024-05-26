@@ -28,7 +28,13 @@
     "personalCare": "Personal Care",
     "meatPacking": "Meat Packing",
     "needCertificates": "Need to be Halal Certified",
-    "subscribeHalal": "Subscribe to get the benefits of IS EG Halal certification around the world"
+    "subscribeHalal": "Subscribe to get the benefits of IS EG Halal certification around the world",
+    "product5": "Meet and their products.",
+    "product6": "Halal chemical and biochemical ingredients",
+    "product7": "Dairy Products",
+    "product8": "Food contact materials",
+    "product9": "Bakery products.",
+    "product10": "Food additives."
   },
   "contactUs": {
     "help": "Need Help?",
@@ -134,7 +140,7 @@
   },
   "mainSlider": {
     "firstItem": {
-      "title": "Discover Everything that is Halal",
+      "title": "Discover Everything about Halal",
       "description": "Halal food refers to what is permissible or lawful in traditional Islamic law"
     },
     "secondItem": {
