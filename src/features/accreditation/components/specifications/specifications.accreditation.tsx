@@ -37,7 +37,7 @@ export const SpecificationsAccreditation = () => {
                   className="!font-bold !text-[#1E2124]"
                   text="accreditationAndSpecifications.generalRequirementsIslamicSharia"
                 />
-                <div className="flex gap-2 flex-wrap">
+                <div className="flex gap-2 flex-wrap ">
                   <DescriptionTextAbout
                     className="bg-[#F5F7F8] xxl:px-[66px] xl:px-[54px] lg:px-[48px] md:px-[32px] px-[24px] xxl:rounded-[16px] lg:rounded-[12px] rounded-[8px] xxl:py-[16px] xl:py-[14px] lg:py-[12px] md:py-[10px] py-[8px]  "
                     text="GSO 993"
@@ -79,7 +79,7 @@ export const SpecificationsAccreditation = () => {
                 className=" text-white"
               />
 
-              <div className="grid grid-cols-2 gap-6 ">
+              <div className="grid grid-cols-3 lg:grid-cols-2  gap-6 ">
                 <DescriptionTextAbout
                   className="bg-[#F5F7F8] text-center xxl:rounded-[16px] lg:rounded-[12px] rounded-[8px] xxl:py-[16px] xl:py-[14px] lg:py-[12px] md:py-[10px] py-[8px]  "
                   text="GSO 2055-2"

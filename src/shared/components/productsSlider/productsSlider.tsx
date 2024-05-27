@@ -23,7 +23,7 @@ export const ProductsSlider: React.FC<Props> = ({ children }) => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          // dots: true,
         },
       },
       {

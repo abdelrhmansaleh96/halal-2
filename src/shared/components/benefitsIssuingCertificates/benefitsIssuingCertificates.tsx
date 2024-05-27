@@ -10,9 +10,9 @@ const BenefitsIssuingCertificates = () => {
         text={t("homeBenefits.certificates")}
         className="max-w-[750px]"
       />
-      <div className="grid grid-cols-1 lg:grid-cols-3 ">
+      <div className="grid gap-4 lg:gap-0 grid-cols-1 lg:grid-cols-3 ">
         <CardDescription
-          className="xxl:w-[386px] w-[280px]"
+          className="xxl:w-[386px] w-[280px] "
           text={t("homeBenefits.paragraphOne")}
         />
         <CardDescription

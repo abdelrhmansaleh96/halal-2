@@ -5,6 +5,7 @@ import { HalalStandardsTitle } from "../../shared";
 import MainContainer from "@/shared/components/mainContainer/mainContainer";
 import SectionSubTitle from "@/shared/components/sectionSubTitle/sectionSubTitle";
 import CardDescription from "@/shared/components/cardDescription/cardDescription";
+import { DescriptionTextAbout } from "@/features/about/shared";
 
 export const HalalStandardsProducts = () => {
   return (
@@ -16,7 +17,7 @@ export const HalalStandardsProducts = () => {
               text="certifiedProducts.HalalStandards"
               className="text-white "
             />
-            <CardDescription
+            <DescriptionTextAbout
               className="text-white "
               text={"certifiedProducts.HalalStandards-sub"}
             />
@@ -25,7 +26,7 @@ export const HalalStandardsProducts = () => {
           <div className="grid lg:grid-cols-12 grid-cols-1 xxl:gap-[52px] xl:gap-[36px] lg:gap-[24px] md:gap-[18px] gap-[12px]">
             <div className="col-span-5 flex flex-col xxl:gap-[40px] xl:gap-[32px] lg:gap-[20px] md:gap-[16px] gap-[10px]  ">
               <HalalStandardsTitle text="certifiedProducts.HalalStandards" />
-              <div className="grid grid-cols-2 xxl:gap-[30px] xl:gap-[24px] lg:gap-[18px] md:gap-[14px] gap-[8px] ">
+              <div className="grid xxl:gap-[30px] xl:gap-[24px] lg:gap-[18px] md:gap-[14px] gap-[8px] standards-specifications-grid  ">
                 <CardTitle
                   text="IAF"
                   className="xxl:rounded-[16px] lg:rounded-[12px] rounded-[8px] bg-[#B68B00] text-white w-fit xxl:px-[66px] xl:px-[48px] lg:px-[36px] md:px-[24px] px-[14px] xxl:py-[16px] xl:py-[14px] lg:py-[12px] md:py-[10px] py-[8px] -standards-code"
@@ -38,7 +39,7 @@ export const HalalStandardsProducts = () => {
             </div>
             <div className="col-span-7 flex flex-col xxl:gap-[40px] xl:gap-[32px] lg:gap-[20px] md:gap-[16px] gap-[10px]">
               <HalalStandardsTitle text="certifiedProducts.ISEGHALALInternationalSpecifications" />
-              <div className="grid grid-cols-2 xxl:gap-[30px] xl:gap-[24px] lg:gap-[18px] md:gap-[14px] gap-[8px] ">
+              <div className="grid  xxl:gap-[30px] xl:gap-[24px] lg:gap-[18px] md:gap-[14px] gap-[8px] standards-specifications-grid ">
                 <CardTitle
                   text="SMIC – OIK 1 :2019"
                   className="xxl:rounded-[16px] lg:rounded-[12px] rounded-[8px] bg-[#B68B00] text-white w-fit xxl:px-[66px] xl:px-[48px] lg:px-[36px] md:px-[24px] px-[14px] xxl:py-[16px] xl:py-[14px] lg:py-[12px] md:py-[10px] py-[8px] -standards-code"
