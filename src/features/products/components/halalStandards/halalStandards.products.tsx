@@ -4,7 +4,6 @@ import CardTitle from "@/shared/components/cardTitle/cardTitle";
 import { HalalStandardsTitle } from "../../shared";
 import MainContainer from "@/shared/components/mainContainer/mainContainer";
 import SectionSubTitle from "@/shared/components/sectionSubTitle/sectionSubTitle";
-import CardDescription from "@/shared/components/cardDescription/cardDescription";
 import { DescriptionTextAbout } from "@/features/about/shared";
 
 export const HalalStandardsProducts = () => {
