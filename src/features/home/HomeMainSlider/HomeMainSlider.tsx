@@ -26,16 +26,19 @@ export const HomeMainSlider: React.FC = () => {
       img: firstImage,
       title: t("mainSlider.firstItem.title"),
       description: t("mainSlider.firstItem.description"),
+      link: "/about-us",
     },
     {
       img: secondImage,
       title: t("mainSlider.secondItem.title"),
       description: t("mainSlider.secondItem.description"),
+      link: "/services",
     },
     {
       img: thirdImage,
       title: t("mainSlider.thirdItem.title"),
       description: t("mainSlider.thirdItem.description"),
+      link: "/accreditation",
     },
   ];
   const matches = window.matchMedia("(max-width: 768px)").matches;
@@ -43,7 +46,13 @@ export const HomeMainSlider: React.FC = () => {
     <MainContainer oneSide={!matches}>
       <Slider {...settings}>
         {sliderItems.map((item, index) => (
-          <MainSliderCard key={index} img={item.img} title={item.title} description={item.description} />
+          <MainSliderCard
+            key={index}
+            img={item.img}
+            title={item.title}
+            description={item.description}
+            link={item.link}
+          />
         ))}
       </Slider>
     </MainContainer>

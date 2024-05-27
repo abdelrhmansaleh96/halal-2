@@ -12,7 +12,9 @@ interface ContactInfoItemPropss {
   };
 }
 
-export const ContactModal: React.FC<ContactInfoItemPropss> = ({ selectedCountry }) => {
+export const ContactModal: React.FC<ContactInfoItemPropss> = ({
+  selectedCountry,
+}) => {
   //   const { t } = useTranslation();
 
   return (
@@ -35,7 +37,10 @@ type ContactInfoItemProps = {
     description: string;
   }[];
 };
-const ContactInfoItemContainer: React.FC<ContactInfoItemProps> = ({ contactInfoItems, branchFlag }) => {
+const ContactInfoItemContainer: React.FC<ContactInfoItemProps> = ({
+  contactInfoItems,
+  branchFlag,
+}) => {
   return (
     <div className="flex flex-col gap-4 md:gap-8 items-top bg-[#363B41] rounded-lg p-4">
       <img src={branchFlag} alt="flag" className="h-fit w-28" />

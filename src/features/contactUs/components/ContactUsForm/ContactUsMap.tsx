@@ -89,7 +89,10 @@ export const ContactUsMap: React.FC<ContactUsMapProps> = ({
   return (
     <div className="contact-map">
       <div className="title">
-        <SectionSubTitle text={t("countries.exploreOurLocations")} className="text-white" />
+        <SectionSubTitle
+          text={t("countries.exploreOurLocations")}
+          className="text-white"
+        />
       </div>
       <div className="map">
         <img src={map} alt="map" className="object-contain sm:object-initial" />

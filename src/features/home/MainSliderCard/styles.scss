@@ -20,14 +20,39 @@
 }
 
 .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   li {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+
+    button {
+      height: 8px;
+    }
     button::before {
-      color: white;
+      color: transparent;
+      height: 8px;
     }
   }
 }
 
+.slick-dots li.slick-active {
+  width: 40px;
+  border-radius: 4px;
+  background-color: #c09300;
+  height: 8px;
+}
 .slick-dots li.slick-active button:before {
-  color: #c09300;
-  // width: 40px;
+  color: transparent;
+  height: 8px;
+}
+.slick-dots {
+  @media (min-width: 767px) {
+    bottom: 25px;
+    width: fit-content;
+  }
 }

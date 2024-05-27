@@ -33,11 +33,9 @@ export const HalalUsersServices = () => {
               <div className="flex flex-col justify-center xxl:gap-[42px] xl:gap-[36px] lg:gap-[24px] md:gap-[18px] gap-[12px]">
                 <SectionSubTitle
                   className=""
-                  text={t("services.ISEGHalalUsers")}
+                  text={t("services.exportersTitle")}
                 />
-                <DescriptionTextAbout
-                  text={t("services.ISEGHalalParagraphTwo")}
-                />
+                <DescriptionTextAbout text={t("services.exportersParagraph")} />
               </div>
             </div>
             <div className="flex flex-row-reverse xxl:gap-[90px] xl:gap-[70px] lg:gap-[50px] md:gap-[30px] gap-[20px]  ">

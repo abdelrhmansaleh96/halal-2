@@ -88,7 +88,7 @@ export const ContactUsContent: React.FC = () => {
       ],
     },
     {
-      id: "de",
+      id: "du",
       branchName: t("countries.germanyBranch"),
       branchFlag: germanyFlag,
       contactInfoItems: [
@@ -130,7 +130,9 @@ export const ContactUsContent: React.FC = () => {
           openModal={openModal}
           setOpenModal={setOpenModal}
         />
-        {selectedCountry && <ContactFormContainer selectedCountry={selectedCountry} />}
+        {selectedCountry && (
+          <ContactFormContainer selectedCountry={selectedCountry} />
+        )}
       </div>
     </FadingAnimation>
   );
