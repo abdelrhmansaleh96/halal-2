@@ -1,11 +1,11 @@
 import "./map.scss";
 
 import { ContactModal } from "../contactModal.component";
-//import SectionSubTitle from "@/shared/components/sectionSubTitle/sectionSubTitle";
 import closeIcon from "../../../../assets/icons/close_small.svg";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import MapImg from "./mapImg";
+import SectionSubTitle from "@/shared/components/sectionSubTitle/sectionSubTitle";
 
 interface MapProps {
   handleSetCountry: (country: string | null) => void;
@@ -29,61 +29,17 @@ export const Map: React.FC<MapProps> = ({
   openModal,
   setOpenModal,
 }) => {
-  //     id: "eg-path",
-  //     icon: egMd,
-  //     title: "countries.egypt",
-  //     className: "eg-flag",
-  //   },
-  //   {
-  //     id: "du-path",
-  //     icon: duMd,
-  //     title: "countries.Germany",
-  //     className: "du-flag",
-  //   },
-  //   {
-  //     id: "nz-path",
-  //     icon: nzMd,
-  //     title: "countries.NewZealand",
-  //     className: "nz-flag",
-  //   },
-  //   {
-  //     id: "br-path",
-  //     icon: brMd,
-  //     title: "countries.brazil",
-  //     className: "br-flag",
-  //   },
-  //   {
-  //     id: "us-path",
-  //     icon: usMd,
-  //     title: "countries.usa",
-  //     className: "us-flag",
-  //   },
-  //   {
-  //     id: "uy-path",
-  //     icon: uyMd,
-  //     title: "countries.uruguay",
-  //     className: "uy-flag",
-  //   },
-  //   {
-  //     id: "in-path",
-  //     icon: inMd,
-  //     title: "countries.india",
-  //     className: "in-flag",
-  //   },
-  // ];
-
   const { t, i18n } = useTranslation();
   const rtl = i18n.dir() === "rtl";
 
   return (
     <div id="contact-map" className="flex flex-col">
-      {/* <div className="title">
-        <SectionSubTitle
-          text={t("countries.exploreOurLocations")}
-          className="text-white"
-        />
-      </div> */}
       <MapImg handleSetCountry={handleSetCountry} />
+
+      <SectionSubTitle
+        text={t("countries.exploreOurLocations")}
+        className="text-white -explore-map-text"
+      />
 
       {openModal && (
         <motion.div
