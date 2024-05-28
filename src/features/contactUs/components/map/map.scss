@@ -17,6 +17,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    svg {
+      height: 100%;
+      :dir(ltr) {
+        direction: ltr !important;
+      }
+      :dir(rtl) {
+        direction: rtl !important;
+      }
+    }
   }
   .-explore-map-text {
   }
@@ -29,15 +38,6 @@
       padding: 0.5rem 0;
     }
     #map-wrapper {
-      svg {
-        height: 100%;
-        :dir(ltr) {
-          direction: ltr;
-        }
-        :dir(rtl) {
-          direction: rtl;
-        }
-      }
     }
   }
 }
