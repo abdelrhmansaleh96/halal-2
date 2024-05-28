@@ -30,7 +30,7 @@ export const ContactUsContent: React.FC = () => {
         {
           icon: emailIcon,
           title: t("countries.email"),
-          description: "egypt@iseghalal-eg.com",
+          description: "Egypt@iseghalal-egy.com",
         },
         {
           icon: phoneIcon,
@@ -71,7 +71,7 @@ export const ContactUsContent: React.FC = () => {
         {
           icon: emailIcon,
           title: t("countries.email"),
-          description: "urguay@iseghalal-egy.com",
+          description: "Urguay@iseghalal-egy.com",
         },
       ],
     },
@@ -131,7 +131,9 @@ export const ContactUsContent: React.FC = () => {
           openModal={openModal}
           setOpenModal={setOpenModal}
         />
-        {selectedCountry && <ContactFormContainer selectedCountry={selectedCountry} />}
+        {selectedCountry && (
+          <ContactFormContainer selectedCountry={selectedCountry} />
+        )}
       </div>
     </FadingAnimation>
   );
