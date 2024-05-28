@@ -5,15 +5,11 @@ type Props = {
 };
 const MapImg = ({ handleSetCountry }: Props) => {
   const { t } = useTranslation();
-  const isSVGPathElement = (
-    element: EventTarget | null
-  ): element is SVGPathElement => {
+  const isSVGPathElement = (element: EventTarget | null): element is SVGPathElement => {
     return element instanceof SVGPathElement;
   };
 
-  const handlePathClick = (
-    event: React.MouseEvent<SVGPathElement, MouseEvent>
-  ) => {
+  const handlePathClick = (event: React.MouseEvent<SVGPathElement, MouseEvent>) => {
     const id = event.currentTarget.getAttribute("id");
 
     if (id) {
@@ -1640,14 +1636,7 @@ const MapImg = ({ handleSetCountry }: Props) => {
         </g>
         </svg>`;
   };
-  return (
-    <div
-      dangerouslySetInnerHTML={{ __html: renderImg() }}
-      onClick={handleClick}
-      className=""
-      id="map-wrapper"
-    />
-  );
+  return <div dangerouslySetInnerHTML={{ __html: renderImg() }} onClick={handleClick} id="map-wrapper" />;
 };
 
 export default MapImg;

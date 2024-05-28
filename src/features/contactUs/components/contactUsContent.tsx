@@ -131,9 +131,7 @@ export const ContactUsContent: React.FC = () => {
           openModal={openModal}
           setOpenModal={setOpenModal}
         />
-        {selectedCountry && (
-          <ContactFormContainer selectedCountry={selectedCountry} />
-        )}
+        {selectedCountry && <ContactFormContainer selectedCountry={selectedCountry} />}
       </div>
     </FadingAnimation>
   );

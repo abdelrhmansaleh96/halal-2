@@ -6,13 +6,38 @@
 #du-path,
 #nz-path {
   cursor: pointer;
+  scale: 1.25;
 }
 #contact-map {
   #map-wrapper {
+    height: inherit;
     display: flex;
     justify-content: center;
     background: url("../../../../assets//img/map-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .-explore-map-text {
+  }
+}
+
+@media (max-width: 768px) {
+  #contact-map {
+    .section-Sub-Title {
+      max-width: 100px;
+      padding: 0.5rem 0;
+    }
+    #map-wrapper {
+      svg {
+        height: 100%;
+        :dir(ltr) {
+          direction: ltr;
+        }
+        :dir(rtl) {
+          direction: rtl;
+        }
+      }
+    }
   }
 }
