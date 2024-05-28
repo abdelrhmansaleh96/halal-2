@@ -54,27 +54,11 @@
         grid-row: 9 / 10;
         grid-column: 11 / 13;
         text-wrap: nowrap;
-        @media screen and (min-width: 994px) and (max-width: 1400px) {
-          grid-row: 7 / 12;
-          grid-column: 17 / 15;
-        }
-        @media screen and (min-width: 768px) and (max-width: 993px) {
-          grid-row: 9/11;
-          grid-column: 25/13;
-        }
       }
       .br-flag {
         grid-row: 15 / 16;
         grid-column: 18 / 20;
         text-wrap: nowrap;
-        @media screen and (min-width: 768px) and (max-width: 900px) {
-          grid-row: 11 / 16;
-          grid-column: 22 / 20;
-        }
-        @media screen and (min-width: 901px) and (max-width: 1200px) {
-          grid-row: 12/16;
-          grid-column: 20/21;
-        }
       }
       .uy-flag {
         grid-row: 17 / 18;

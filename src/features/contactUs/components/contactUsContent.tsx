@@ -19,7 +19,7 @@ export const ContactUsContent: React.FC = () => {
   const { t } = useTranslation();
   const countries = [
     {
-      id: "eg",
+      id: "eg-path",
       branchName: t("countries.egyptBranch"),
       branchFlag: egFlag,
       contactInfoItems: [
@@ -40,7 +40,7 @@ export const ContactUsContent: React.FC = () => {
       ],
     },
     {
-      id: "in",
+      id: "in-path",
       branchName: t("countries.indiaBranch"),
       branchFlag: indiaFlag,
       contactInfoItems: [
@@ -52,7 +52,7 @@ export const ContactUsContent: React.FC = () => {
       ],
     },
     {
-      id: "br",
+      id: "br-path",
       branchName: t("countries.brazilBranch"),
       branchFlag: brazilFlag,
       contactInfoItems: [
@@ -64,7 +64,7 @@ export const ContactUsContent: React.FC = () => {
       ],
     },
     {
-      id: "uy",
+      id: "uy-path",
       branchName: t("countries.uyBranch"),
       branchFlag: uyFlag,
       contactInfoItems: [
@@ -76,7 +76,7 @@ export const ContactUsContent: React.FC = () => {
       ],
     },
     {
-      id: "us",
+      id: "us-path",
       branchName: t("countries.usaBranch"),
       branchFlag: usFlag,
       contactInfoItems: [
@@ -88,7 +88,7 @@ export const ContactUsContent: React.FC = () => {
       ],
     },
     {
-      id: "du",
+      id: "du-path",
       branchName: t("countries.germanyBranch"),
       branchFlag: germanyFlag,
       contactInfoItems: [
@@ -100,7 +100,7 @@ export const ContactUsContent: React.FC = () => {
       ],
     },
     {
-      id: "nz",
+      id: "nz-path",
       branchName: t("countries.nzBranch"),
       branchFlag: newZwalandFlag,
       contactInfoItems: [
@@ -115,10 +115,11 @@ export const ContactUsContent: React.FC = () => {
 
   const [selectedCountry, setSelectedCountry] = useState(countries[0]);
   const [openModal, setOpenModal] = useState(false);
-  const handleSetCountry = (countryId: string) => {
+  const handleSetCountry = (countryId: string | null) => {
     const country = countries.find((country) => country.id === countryId);
     if (country) {
       setSelectedCountry(country);
+      setOpenModal(true);
     }
   };
   return (

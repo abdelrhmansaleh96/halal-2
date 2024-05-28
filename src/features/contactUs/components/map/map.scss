@@ -1,0 +1,17 @@
+#eg-path,
+#in-path,
+#br-path,
+#uy-path,
+#us-path,
+#du-path,
+#nz-path {
+  cursor: pointer;
+}
+#map-wrapper {
+  display: flex;
+  justify-content: center;
+
+  svg {
+    direction: rtl;
+  }
+}
