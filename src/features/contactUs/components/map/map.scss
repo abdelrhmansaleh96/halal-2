@@ -17,8 +17,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
     svg {
-      height: 100%;
+      height: calc(80vh - 120px);
+
       :dir(ltr) {
         direction: ltr !important;
       }
@@ -33,11 +35,35 @@
 
 @media (max-width: 768px) {
   #contact-map {
+    #map-wrapper {
+      svg {
+        height: 270px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #contact-map {
     .section-Sub-Title {
       max-width: 100px;
       padding: 0.5rem 0;
     }
     #map-wrapper {
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #contact-map {
+    .section-Sub-Title {
+      max-width: 100px;
+      padding: 0.5rem 0;
+    }
+    #map-wrapper {
+      svg {
+        height: 220px;
+      }
     }
   }
 }

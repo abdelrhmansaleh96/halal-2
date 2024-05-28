@@ -38,7 +38,7 @@ export const ContactUsMapContainer: React.FC<ContactUsMapContainerProps> = ({
   ];
   return (
     // <div className="w-full min-h-[calc(100vh-120px)] pt-4 bg-muted">
-    <div className="w-full pt-4 bg-muted h-auto md:min-h-[unset] md:h-[calc(100vh_-_120px)]">
+    <div className="w-full pt-4 bg-muted  h-[390px]  md:min-h-[unset] md:h-[calc(100vh_-_120px)]">
       <MainContainer>
         <CustomBreadcrumbs breadcrumbs={breadcrumbs} />
         <Map
